@@ -1,6 +1,6 @@
 def calculate_square(number):
     """Calculates the square of a number."""
-    return number * number
+    return number ** 2
 
 if __name__ == "__main__":
     user_number = int(input("Enter a number: "))

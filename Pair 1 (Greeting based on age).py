@@ -7,5 +7,12 @@ def greet_user(name, age):
 
 if __name__ == "__main__":
     user_name = input("Enter your name: ")
-    user_age = int(input("Enter your age: "))
+    
+    while True:
+        try:
+            user_age = int(input("Enter your age: "))
+            break
+        except ValueError:
+            print("Please enter a valid number for age.")
+    
     greet_user(user_name, user_age)
